@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+
+    <form>
+      <fieldset>
+        <legend>hours</legend>
+        <div>
+          <label>
+            <input type="radio" name="hours" value="6">
+            6 hours
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="hours" value="8">
+            8 hours
+          </label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>wedding</legend>
+        <div>
+          <label for="wedding[date]">
+            wedding date
+            <input type="date" name="wedding[date]" />
+          </label>
+        </div>
+        <div>
+          <label for="wedding[venue_name]">
+            wedding venue name
+            <input type="text" name="wedding[venue_name]" />
+          </label>
+        </div>
+        <div>
+          <label for="wedding[venue_postal_code]">
+            wedding venue ZIP code
+            <input type="tel" name="wedding[venue_postal_code]" pattern="[0-9]{5}" />
+          </label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>bride</legend>
+        <div>
+          <label for="wedding[bride][first_name]">
+            bride first name
+            <input type="text" name="wedding[bride][first_name]" />
+          </label>
+        </div>
+        <div>
+          <label for="wedding[bride][last_name]">
+            bride last name
+            <input type="text" name="wedding[bride][last_name]" />
+          </label>
+        </div>
+        <div>
+          <label for="wedding[bride][email]">
+            bride email
+            <input type="text" name="wedding[bride][email]" />
+          </label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>groom</legend>
+        <div>
+          <label for="wedding[groom][first_name]">
+            groom first name
+            <input type="text" name="wedding[groom][first_name]" />
+          </label>
+        </div>
+        <div>
+          <label for="wedding[groom][last_name]">
+            groom last name
+            <input type="text" name="wedding[groom][last_name]" />
+          </label>
+        </div>
+        <div>
+          <label for="wedding[groom][last_name]">
+            groom email
+            <input type="text" name="wedding[groom][email]" />
+          </label>
+        </div>
+      </fieldset>
+      <input type="submit" value="submit">
+    </form>
+
+    <script src="index.js"></script>
+
+  </body>
+</html>
